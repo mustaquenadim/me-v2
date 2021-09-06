@@ -1,0 +1,154 @@
+.projects {
+    height: 100vh;
+}
+
+.projects__main {
+    font-family: 'Delius', cursive;
+}
+
+.projects__main .projects__title {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 60px;
+    font-weight: 600;
+    color: #1d3557;
+}
+
+.projects__main .highlight {
+    color: #e63946;
+}
+
+.projects__main .projects__text {
+    font-size: 24px;
+}
+
+.projects__main .projects__itemButtons .active {
+    color: #f1faee;
+    background-color: #e63946 !important;
+}
+
+
+
+
+
+.card {
+    /* background-color: #774691; */
+    /* font-family: 'Raleway', sans-serif; */
+    overflow: hidden;
+    position: relative;
+}
+
+.card:before, .card:after {
+    content: '';
+    /* background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); */
+    background-color: #457b9d;
+    height: 50%;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: -50%;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s ease-in 0s;
+}
+
+.card:after {
+    top: auto;
+    bottom: -50%;
+}
+
+.card:hover:before {
+    top: 0;
+}
+
+.card:hover:after {
+    bottom: 0;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card .card-content {
+    color: #f1faee;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: 2;
+    transition: all 0.3s ease-out 0.1s;
+}
+
+.card:hover .card-content {
+    opacity: 1;
+    top: 20%;
+}
+.card .project__title {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    /* text-transform: capitalize; */
+    margin: 0;
+}
+
+.card .project__title:after {
+    content: '';
+    height: 2px;
+    width: 70px;
+    border-top: 2px dashed rgba(255,255,255,0.7);
+    margin: 7px auto 10px;
+    display: block;
+    clear: both;
+}
+
+.card .project__subtitle {
+    color: rgba(255,255,255,0.8);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.card .project__icons {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    opacity: 0;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    z-index: 2;
+    transition: all 0.3s ease-out 0.1s;
+}
+
+.card:hover .project__icons {
+    opacity: 1;
+    bottom: 20%;
+}
+
+.card .project__icons li {
+    margin: 0 3px;
+    display: inline-block;
+}
+
+.card .project__icons li a {
+    color: #1d3557;
+    background-color: #f1faee;
+    font-size: 15px;
+    text-align: center;
+    line-height: 36px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+.card .project__icons li a:hover {
+    color: #f1faee;
+    background: #e63946;
+}

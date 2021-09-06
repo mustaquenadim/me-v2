@@ -1,0 +1,52 @@
+.contact {
+    height: 100vh;
+}
+
+.contact__main {
+    font-family: 'Delius', cursive;
+}
+
+.contact__main .contact__title {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 60px;
+    font-weight: 600;
+    color: #1d3557;
+}
+
+.contact__main .highlight {
+    color: #e63946;
+}
+
+.contact__main .contact__text {
+    font-size: 24px;
+}
+
+.contact__info {
+}
+
+.contact__infoOption {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    text-decoration: none;
+    display: inline-block;
+    color: #212529;
+    cursor: pointer;
+}
+
+.contact__infoOption:hover {
+    transition: 0.25s;
+    color: #e63946;
+}
+
+.contact__main .contact__form .contact__submitBtn {
+    padding: 10px 15px;
+    background-color: #f1faee;
+    border: 1px solid;
+}
+
+.contact__main .contact__form .contact__submitBtn:hover {
+    transition: 0.4s;
+    background-color: #e63946;
+    color: #f1faee;
+}
