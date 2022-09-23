@@ -1,3 +1,6 @@
+.env
+.env.local
+
 # Project dependencies
 .cache
 node_modules

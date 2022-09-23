@@ -1,9 +1,9 @@
-import React, { useEffect, useRef } from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
-import styled from 'styled-components';
 import { srConfig } from '@config';
-import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import sr from '@utils/sr';
+import { StaticImage } from 'gatsby-plugin-image';
+import React, { useEffect, useRef } from 'react';
+import styled from 'styled-components';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -125,7 +125,14 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'JavaScript (ES6+)',
+    'TypeScript',
+    'React',
+    'Node.js',
+    'React Native',
+    'Data Structures & Algorithms',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,30 +142,18 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! My name is Mustaque Nadim and I enjoy building solutions for mankind. I've
+              started my programming journey since 2017 when I was only 17 years old. At that time,
+              I've started learning C programming language. After that, I've learnt C++, Python,
+              HTML, CSS, JavaScript, React, Node, MongoDB and many more. But now I'm only working on
+              JavaScript.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
-            </p>
-
-            <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              So far, and I’ve got opportunity of working at{' '}
+              <a href="https://jouleslabs.com/">JoulesLabs</a> and{' '}
+              <a href="https://techsistltd.com/">Techsist Limited</a>. Besides, I'm working with a
+              software company as a part-time developer.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>

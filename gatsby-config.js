@@ -2,9 +2,9 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Brittany Chiang',
+    title: 'Mustaque Nadim',
     description:
-      'Brittany Chiang is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
+      'Mustaque Nadim is a passionate programmer from Bangladesh, skilled in building web applications using MERN (MongoDB, ExpressJS, ReactJS, NodeJS) technologies.',
     siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@bchiang7',
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'BrittanyChiang',
-        short_name: 'BrittanyChiang',
+        name: 'mustaquenadim',
+        short_name: 'mustaquenadim',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,

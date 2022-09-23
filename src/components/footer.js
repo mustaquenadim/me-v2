@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { Icon } from '@components/icons';
 import { socialMedia } from '@config';
+import PropTypes from 'prop-types';
+import React, { useEffect, useState } from 'react';
+import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -121,6 +121,7 @@ const Footer = () => {
             </div>
           )}
         </a>
+        <div>Revised by Mustaque Nadim</div>
       </StyledCredit>
     </StyledFooter>
   );
